@@ -1,6 +1,6 @@
 # BLOC 1 - Développer la présence en ligne de l'organisation
 
-## Méthodes GET et POST
+## 1 - Méthodes GET et POST
 Tout d'abord, HTTP (Hypertext Transfer Protocol) est le protocole le plus utilisé pour transférer des données sur internet. Les méthodes "GET" et "POST" sont deux principales méthodes de requête mais elles sont différentes dans la manière dont elles sont utilisées.  
 
 
@@ -24,4 +24,8 @@ GET /produit?id=536153
 ```  
 > Cette méthode de requête est donc utilisé pour transférer des données au serveur qui peut modifier les données comme la création d'une nouvelle ressource ou d'une mise à jour.  
   
-Pour synthétiser, la méthode http GET est généralement utilisé pour récupérer des données contrairement a la méthode POST, qui est utilisé pour soumettre des données au serveur qui peut entraîner des modifications de l'état du serveur. 
+Pour synthétiser, la méthode http GET est généralement utilisé pour récupérer des données contrairement a la méthode POST, qui est utilisé pour soumettre des données au serveur qui peut entraîner des modifications de l'état du serveur.  
+
+
+## 2 - Comparaison méthodes
+Exemple 
