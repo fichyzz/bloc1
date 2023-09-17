@@ -74,7 +74,7 @@ Une URL (Uniform Resource Locator) est une adresse web qui permet de localiser u
 > Le fragment est une partie de l'URL qui identifie une section spécifique d'une page web. Il est suivi par un signe dièse "#" puis d'un identifiant. Par exemple, dans "http://www.exemple.com/page#section2024", le fragment "#section2024" pointe vers la section 2024 de la page.
 
 
-### 6 - Codes Status
+## 6 - Codes Status
 
 Les codes de statut HTTP sont des codes numériques envoyés par le serveur web en réponse à une requête HTTP pour indiquer l'état de la réponse.<br>Ils sont regroupés en familles en fonction de leur signification générale. Voici les principales familles de codes de statut HTTP avec un exemple pour chacune d'entre elles :
 
