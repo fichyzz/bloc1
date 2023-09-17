@@ -111,3 +111,13 @@ Supposons qu'un client envoie une requête au serveur avec les en-têtes suivant
 > Accept: text/html, application/xhtml+xml, application/xml;q=0.9 <br>
 
 Le serveur peut répondre avec une page web disponible dans deux langues (français et anglais) et dans deux formats (HTML et XML). En fonction des en-têtes de la requête, le serveur peut choisir de renvoyer la version HTML en français car c'est la meilleure correspondance avec les préférences du client. Le client affichera ensuite cette page web en français et non en anglais.
+
+
+## 8/9 – Installation Apache & configuration + CURL
+
+Impossible de répondre à la question. J'ai plusieurs problèmes avec des droits sur ma machine qui m'empêche de réaliser la question.
+
+
+## 10 - Headers
+
+exemple
