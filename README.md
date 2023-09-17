@@ -82,17 +82,17 @@ Les codes de statut HTTP sont des codes numériques envoyés par le serveur web 
 > **100 - Continue**: Le serveur indique que la requête initiale a été reçue et que le client peut continuer à envoyer la requête. `HTTP/1.1 100 Continue`
 
 ### Famille 2xx - Réponses de succès :
-> **200 - OK**: La requête a été traitée avec succès. `HTTP/1.1 200 OK`
+> **200 - OK**: La requête a été traitée avec succès. `HTTP/1.1 200 OK`<br>
 > **204 - No Content**: La requête a été traitée avec succès, mais il n'y a pas de contenu à renvoyer. `HTTP/1.1 204 No Content`
 
 ### Famille 3xx - Redirection :
-> **301 - Moved Permanently**: La ressource a été déplacée de manière permanente vers une nouvelle URL. `HTTP/1.1 301 Moved Permanently`
+> **301 - Moved Permanently**: La ressource a été déplacée de manière permanente vers une nouvelle URL. `HTTP/1.1 301 Moved Permanently`<br>
 > **302 - Found (ou Moved Temporarily)**: La ressource a été temporairement déplacée vers une nouvelle URL. `HTTP/1.1 302 Found`
 
 ### Famille 4xx - Erreurs du client :
-> **400 - Bad Request**: La requête du client est incorrecte ou mal formée. `HTTP/1.1 400 Bad Request`
+> **400 - Bad Request**: La requête du client est incorrecte ou mal formée. `HTTP/1.1 400 Bad Request`<br>
 > **404 - Not Found**: La ressource demandée n'a pas été trouvée sur le serveur. `HTTP/1.1 404 Not Found`
 
 ### Famille 5xx - Erreurs du serveur :
-> **500 - Internal Server Error**: Une erreur interne s'est produite sur le serveur. `HTTP/1.1 500 Internal Server Error`
+> **500 - Internal Server Error**: Une erreur interne s'est produite sur le serveur. `HTTP/1.1 500 Internal Server Error`<br>
 > **503 - Service Unavailable**: Le serveur n'est pas disponible pour le moment. `HTTP/1.1 503 Service Unavailable`
