@@ -41,7 +41,7 @@ Le protocole HTTP (Hypertext Transfer Protocol) est extensible et lui permet d'�
 
 > **Méthodes HTTP extensibles**: HTTP définit un ensemble de méthodes standard telles que GET, POST, PUT, DELETE, etc... qui décrivent l'action à effectuer sur une ressource.<br><br> 
 > **En-têtes HTTP extensibles**: Les en-têtes HTTP permettent de transporter des informations supplémentaires dans une requête ou une réponse. Le protocole HTTP permet d'ajouter des en-têtes personnalisés pour transporter des métadonnées spécifiques à une application.<br><br>
-> **Version HTTP**: Les versions du protocole HTTP (HTTP/1.0, HTTP/1.1, HTTP/2, HTTP/3, etc.) permettent d'introduire de nouvelles fonctionnalités en maintenant la compatibilité avec les versions précédentes et permet d'introduire de nouvelles fonctionnalités.<br><br>  
+> **Version HTTP**: Les versions du protocole HTTP (HTTP/1.0, HTTP/1.1, HTTP/2, HTTP/3, etc.) permettent d'introduire de nouvelles fonctionnalités en maintenant la compatibilité avec les versions précédentes et permet d'introduire de nouvelles fonctionnalités.<br><br>
 > **Extensions HTTP**: L'extension HTTP se fait souvent via des protocoles complémentaires, tels que WebSockets pour la communication en temps réel ou HTTP/2 pour l'amélioration des performances.  
 
 Pour résumer, le protocole HTTP est extensible puisqu'il peut évoluer avec de nouvelles méthodes (en-têtes, versions, extensions et d'autres encore...) et en maintenant la compatibilité avec les fonctionnalités déjà existantes.
