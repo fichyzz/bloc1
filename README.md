@@ -103,3 +103,10 @@ Les codes de statut HTTP sont des codes numériques envoyés par le serveur web 
 > La négociation de contenu HTTP est un mécanisme qui permet au client et au serveur web de donner la meilleure représentation d'une ressource en fonction des préférences et des capacités de chacun.<br>Cela signifie que lorsque le client envoie une demande pour une ressource, le serveur peut choisir de lui envoyer différentes versions de cette ressource en fonction des informations fournies par le client et des options disponibles sur le serveur. Voici comment fonctionne ce processus:<br><br>
 
 Le client envoie une requête HTTP → Le serveur reçoit la requête → Le serveur détermine les options disponibles → Le serveur choisit la meilleure option → Le serveur envoie la réponse au client → Le client affiche la ressource
+
+### Illustration :
+Supposons qu'un client envoie une requête au serveur avec les en-têtes suivants:<br>
+
+> Accept-Language: fr, en<br>
+> Accept: text/html, application/xhtml+xml, application/xml;q=0.9<br>
+> Le serveur peut répondre avec une page web disponible dans deux langues (français et anglais) et dans deux formats (HTML et XML). En fonction des en-têtes de la requête, le serveur peut choisir de renvoyer la version HTML en français car c'est la meilleure correspondance avec les préférences du client. Le client affichera ensuite cette page web en français et non en anglais.
