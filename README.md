@@ -108,6 +108,6 @@ Le client envoie une requête HTTP → Le serveur reçoit la requête → Le ser
 Supposons qu'un client envoie une requête au serveur avec les en-têtes suivants:<br>
 
 > Accept-Language: fr, en<br>
-> Accept: text/html, application/xhtml+xml, application/xml;q=0.9<br><br>
-
+> Accept: text/html, application/xhtml+xml, application/xml;q=0.9
+<br><br>
 Le serveur peut répondre avec une page web disponible dans deux langues (français et anglais) et dans deux formats (HTML et XML). En fonction des en-têtes de la requête, le serveur peut choisir de renvoyer la version HTML en français car c'est la meilleure correspondance avec les préférences du client. Le client affichera ensuite cette page web en français et non en anglais.
