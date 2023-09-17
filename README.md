@@ -134,3 +134,21 @@ Même si je ne peux pas répondre aux 2 précédentes questions, voici une liste
 | Host | 	Spécifie le nom de domaine du serveur cible, indispensable dans les requêtes HTTP/1.1. Il permet de déterminer quel site web est ciblé lorsque plusieurs sites partagent la même adresse IP. | `Host: www.exemple.com` | 
 | Cache-Control | Contrôle la mise en cache de la réponse. Les en-têtes liés à la mise en cache permettent de spécifier si la réponse peut être mise en cache par le navigateur ou le proxy. | `Cache-Control: no-cache, max-age=0` | 
 | Connection | Gère la manière dont la connexion HTTP doit être gérée. Par exemple, il peut spécifier "keep-alive" pour permettre la réutilisation de la connexion pour plusieurs requêtes. | `Connection: keep-alive` | 
+
+### Illustration :
+
+Supposons qu'un utilisateur visite le site web "www.sio1alt.com" en utilisant un navigateur Chrome. Voici comment certaines de ces en-têtes pourraient apparaître dans la requête HTTP:<br>
+
+```
+GET /page-dexemple HTTP/1.1
+Host: www.sio1alt.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36
+Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8
+Accept-Language: fr-FR, en-US;q=0.7
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.referer.com/page-precedente
+Cookie: session_id=12345; user_id=67890
+```
+<br>
+Ces en-têtes aident le serveur à comprendre les préférences du client et à personnaliser la réponse en conséquence, tout en permettant au client de gérer la manière dont il souhaite interagir avec le serveur.
