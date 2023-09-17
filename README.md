@@ -10,10 +10,9 @@ Tout d'abord, HTTP (Hypertext Transfer Protocol) est le protocole le plus utilis
 GET /produit?id=536153
 ``` 
 > Les requêtes GET sont donc utilisées pour récupérer des données, elles sont transmises dans l'URL sous forme de "paires clé-valeur", ce qui les rend visibles dans l'URL.  
-> *Dans l'exemple ci-dessus,* `id=12345` *est la paire clé-valeur.*  
->  
->   
-> ### **Deuxièmement, la méthode http POST est généralement utilisé pour envoyer des données**
+> *Dans l'exemple ci-dessus,* `id=12345` *est la paire clé-valeur.*  <br>
+
+### **Deuxièmement, la méthode http POST est généralement utilisé pour envoyer des données**
 > Avec cette méthode, les données ne sont pas généralement transmises dans l'URL, mais plutôt dans le corps de la requête comme `POST /produit`.  
 > A contrario de la méthode http GET, les données avec la méthode POST sont transmises dans le corps de la requête donc invisible dans l'URL. Par exemple, un objet JSON ou un formulaire HTML avec des champs de saisie peut être envoyé :  
 ```
@@ -46,6 +45,15 @@ Le protocole HTTP (Hypertext Transfer Protocol) est extensible et lui permet d'�
 
 Pour résumer, le protocole HTTP est extensible puisqu'il peut évoluer avec de nouvelles méthodes (en-têtes, versions, extensions et d'autres encore...) et en maintenant la compatibilité avec les fonctionnalités déjà existantes.
 
+
 ## 4 - Sans état
 
 **Un protocole sans état** signifie que toutes les interactions entre un navigateur web et un serveur web est une nouvelle conversation sans que le serveur ne se souvienne des requêtes précédentes.<br>A titre d'exemple, c'est comme si vous entriez dans un magasin et que le vendeur ne se souvenait pas de ce que vous avez acheté la dernière fois.<br>Cependant, le serveur a besoin de moyens supplémentaires comme les cookies pour se souvenir de vous d'une visite à l'autre. Ainsi, cela peut rendre l'intéraction avec l'utilisateur plus rapide et plus efficace.
+
+
+## 5 - URL
+
+Une URL (Uniform Resource Locator) est une adresse web qui permet de localiser une ressource spécifique sur Internet. Elle est composée de plusieurs parties avec chacune un rôle spécifique. Voici les principales parties d'une URL et leur rôle :<br>
+
+### Schéma
+> Le schéma est la première partie de l'URL comme "http://" ou "https://". Il indique le protocole de communication à utiliser pour accéder à la ressource. "http://" signifie une communication non sécurisé via le protocole HTTP, tandis que "https://" indique une communication sécurisée via HTTPS.
