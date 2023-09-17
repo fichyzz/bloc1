@@ -56,4 +56,19 @@ Pour résumer, le protocole HTTP est extensible puisqu'il peut évoluer avec de 
 Une URL (Uniform Resource Locator) est une adresse web qui permet de localiser une ressource spécifique sur Internet. Elle est composée de plusieurs parties avec chacune un rôle spécifique. Voici les principales parties d'une URL et leur rôle :<br>
 
 ### Schéma
-> Le schéma est la première partie de l'URL comme "http://" ou "https://". Il indique le protocole de communication à utiliser pour accéder à la ressource. "http://" signifie une communication non sécurisé via le protocole HTTP, tandis que "https://" indique une communication sécurisée via HTTPS.
+> Le schéma est la première partie de l'URL comme "http://" ou "https://". Il indique le protocole de communication à utiliser pour accéder à la ressource. "http://" signifie une communication non sécurisé via le protocole HTTP, tandis que "https://" indique une communication sécurisée via HTTPS.<br>
+
+### Nom de domaine (Host)
+> Le nom de domaine est la partie de l'URL qui identifie le serveur web sur lequel se trouve la ressource. Par exemple, dans "www.exemple.com", "www" est souvent un **sous-domaine**. "exemple" lui, est le nom de domaine principal tandis que ".com", est le domaine de premier niveau (TLD, Top-Level Domain). Le serveur est localisé en utilisant une adresse IP associée à ce nom de domaine.<br>
+
+### Port
+> Le port est une partie optionnelle de l'URL qui indique le numéro de port à utiliser pour la communication avec le serveur. Par exemple, ":80" est le port par défaut pour HTTP (non sécurisé), tandis que ":443" est le port par défaut pour HTTPS (sécurisé). Si le port n'est pas spécifié, le navigateur utilise le port par défaut du schéma automatiquement (80 pour HTTP, 443 pour HTTPS).<br>
+
+### Chemin (Path)
+> Le chemin identifie l'emplacement spécifique de la ressource sur le serveur. Par exemple, "/sio2024/sioalt.html" indique que la ressource se trouve dans le dossier "sio2024" sur le serveur et s'appelle "sioalt.html". Le chemin est souvent utilisé pour accéder à des pages web spécifiques ou à des fichiers sur un site.
+
+### Requête (Query)
+> La partie de requête de l'URL est utilisée pour transmettre des données supplémentaires au serveur. Elle commence généralement par un point d'interrogation "?" suivi de paramètres séparés par des "&". Par exemple, dans "http://www.exemple.com/recherche?motclef=sio2024", "motclef=sio2024" est une requête pour rechercher le terme "sio2024" directement sur le site.
+
+### Fragment (Fragment)
+> Le fragment est une partie de l'URL qui identifie une section spécifique d'une page web. Il est suivi par un signe dièse "#" puis d'un identifiant. Par exemple, dans "http://www.exemple.com/page#section2024", le fragment "#section2024" pointe vers la section 2024 de la page.
