@@ -96,3 +96,10 @@ Les codes de statut HTTP sont des codes numériques envoyés par le serveur web 
 ### Famille 5xx - Erreurs du serveur :
 > **500 - Internal Server Error**: Une erreur interne s'est produite sur le serveur. `HTTP/1.1 500 Internal Server Error`<br>
 > **503 - Service Unavailable**: Le serveur n'est pas disponible pour le moment. `HTTP/1.1 503 Service Unavailable`
+
+
+## 7 – Négociation de contenu
+
+> La négociation de contenu HTTP est un mécanisme qui permet au client et au serveur web de donner la meilleure représentation d'une ressource en fonction des préférences et des capacités de chacun.<br>Cela signifie que lorsque le client envoie une demande pour une ressource, le serveur peut choisir de lui envoyer différentes versions de cette ressource en fonction des informations fournies par le client et des options disponibles sur le serveur. Voici comment fonctionne ce processus:
+> 
+> Le client envoie une requête HTTP → Le serveur reçoit la requête → Le serveur détermine les options disponibles → Le serveur choisit la meilleure option → Le serveur envoie la réponse au client → Le client affiche la ressource
