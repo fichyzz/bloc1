@@ -28,4 +28,8 @@ Pour synthétiser, la méthode http GET est généralement utilisé pour récup�
 
 
 ## 2 - Comparaison méthodes
-Exemple 
+
+| Méthodes | Transmission de données | Objectif principal | Visibilité des données dans l'URL | Implication sur les données |
+|:-:    |:-:    |:-:    |:-:    |:-:    |
+| GET | Les données sont transmises dans l'URL en tant que paramètres de requête | Récupération de données | Les données sont visibles dans l'URL | Sans effet, ne modifie pas l'état du serveur |
+| POST | Les données sont transmises dans le corps de la requête, généralement de manière invisible dans l'URL | Soumission de données au serveur, généralement pour effectuer des opérations qui modifient l'état du serveur | Les données ne sont généralement pas visibles dans l'URL | Peut modifier l'état du serveur ou des données |
