@@ -120,4 +120,17 @@ Impossible de répondre à la question. J'ai plusieurs problèmes avec des droit
 
 ## 10 - Headers
 
-exemple
+Même si je ne peux pas répondre aux 2 précédentes questions, voici une liste des principaux en-têtes de la requête HTTP avec des explications sur leur rôle et des exemples d'utilisation:<br>
+
+| En-tête HTTP | Explication et Rôle | Exemple d'Utilisation |
+|:-:    |:-:    |:-:    |
+| User-Agent | 	Fournit des informations sur le navigateur ou l'agent utilisateur utilisé pour la requête. Les serveurs peuvent l'utiliser pour adapter leurs réponses en fonction du client. | `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36` | 
+| Accept | Indique les types de contenu que le client peut accepter, généralement sous forme de types MIME (par ex., HTML, XML, JSON). Les serveurs peuvent utiliser cette information pour négocier le contenu. | `Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8` | 
+| Accept-Language | Spécifie les langues préférées par le client pour le contenu. Les serveurs peuvent fournir des réponses dans la langue souhaitée si elles sont disponibles. | `Accept-Language: fr-FR, en-US;q=0.7` | 
+| Accept-Encoding | Indique les méthodes de compression que le client peut accepter. Les serveurs peuvent compresser la réponse si le client le permet, réduisant ainsi la taille des données transférées. | `Accept-Encoding: gzip, deflate, br` | 
+| Authorization | Utilisé pour inclure des informations d'identification lorsque l'accès à une ressource est protégé par une authentification. | `Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==` (exemple d'authentification de base) | 
+| Cookie | Contient les cookies associés au domaine du serveur. Les cookies peuvent stocker des informations sur la session et les préférences de l'utilisateur. | `Cookie: session_id=12345; user_id=67890` | 
+| Referer (ou Referer) | Indique la source de la demande, généralement l'URL de la page précédente à partir de laquelle la requête a été déclenchée. Les serveurs peuvent l'utiliser pour suivre les références et analyser le trafic. | `Referer: https://www.exemple.com/page-precedente` | 
+| Host | 	Spécifie le nom de domaine du serveur cible, indispensable dans les requêtes HTTP/1.1. Il permet de déterminer quel site web est ciblé lorsque plusieurs sites partagent la même adresse IP. | `Host: www.exemple.com` | 
+| Cache-Control | Contrôle la mise en cache de la réponse. Les en-têtes liés à la mise en cache permettent de spécifier si la réponse peut être mise en cache par le navigateur ou le proxy. | `Cache-Control: no-cache, max-age=0` | 
+| Connection | Gère la manière dont la connexion HTTP doit être gérée. Par exemple, il peut spécifier "keep-alive" pour permettre la réutilisation de la connexion pour plusieurs requêtes. | `Connection: keep-alive` | 
