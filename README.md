@@ -56,13 +56,13 @@ Pour résumer, le protocole HTTP est extensible puisqu'il peut évoluer avec de 
 Une URL (Uniform Resource Locator) est une adresse web qui permet de localiser une ressource spécifique sur Internet. Elle est composée de plusieurs parties avec chacune un rôle spécifique. Voici les principales parties d'une URL et leur rôle :<br>
 
 ### Schéma
-> Le schéma est la première partie de l'URL comme "http://" ou "https://". Il indique le protocole de communication à utiliser pour accéder à la ressource. "http://" signifie une communication non sécurisé via le protocole HTTP, tandis que "https://" indique une communication sécurisée via HTTPS.<br>
+> Le schéma est la première partie de l'URL comme "http://" ou "https://". Il indique le protocole de communication à utiliser pour accéder à la ressource. "http://" signifie une communication non sécurisé via le protocole HTTP, tandis que "https://" indique une communication sécurisée via HTTPS.
 
 ### Nom de domaine (Host)
-> Le nom de domaine est la partie de l'URL qui identifie le serveur web sur lequel se trouve la ressource. Par exemple, dans "www.exemple.com", "www" est souvent un **sous-domaine**. "exemple" lui, est le nom de domaine principal tandis que ".com", est le domaine de premier niveau (TLD, Top-Level Domain). Le serveur est localisé en utilisant une adresse IP associée à ce nom de domaine.<br>
+> Le nom de domaine est la partie de l'URL qui identifie le serveur web sur lequel se trouve la ressource. Par exemple, dans "www.exemple.com", "www" est souvent un **sous-domaine**. "exemple" lui, est le nom de domaine principal tandis que ".com", est le domaine de premier niveau (TLD, Top-Level Domain). Le serveur est localisé en utilisant une adresse IP associée à ce nom de domaine.
 
 ### Port
-> Le port est une partie optionnelle de l'URL qui indique le numéro de port à utiliser pour la communication avec le serveur. Par exemple, ":80" est le port par défaut pour HTTP (non sécurisé), tandis que ":443" est le port par défaut pour HTTPS (sécurisé). Si le port n'est pas spécifié, le navigateur utilise le port par défaut du schéma automatiquement (80 pour HTTP, 443 pour HTTPS).<br>
+> Le port est une partie optionnelle de l'URL qui indique le numéro de port à utiliser pour la communication avec le serveur. Par exemple, ":80" est le port par défaut pour HTTP (non sécurisé), tandis que ":443" est le port par défaut pour HTTPS (sécurisé). Si le port n'est pas spécifié, le navigateur utilise le port par défaut du schéma automatiquement (80 pour HTTP, 443 pour HTTPS).
 
 ### Chemin (Path)
 > Le chemin identifie l'emplacement spécifique de la ressource sur le serveur. Par exemple, "/sio2024/sioalt.html" indique que la ressource se trouve dans le dossier "sio2024" sur le serveur et s'appelle "sioalt.html". Le chemin est souvent utilisé pour accéder à des pages web spécifiques ou à des fichiers sur un site.
@@ -72,3 +72,27 @@ Une URL (Uniform Resource Locator) est une adresse web qui permet de localiser u
 
 ### Fragment (Fragment)
 > Le fragment est une partie de l'URL qui identifie une section spécifique d'une page web. Il est suivi par un signe dièse "#" puis d'un identifiant. Par exemple, dans "http://www.exemple.com/page#section2024", le fragment "#section2024" pointe vers la section 2024 de la page.
+
+
+### 6 - Codes Status
+
+Les codes de statut HTTP sont des codes numériques envoyés par le serveur web en réponse à une requête HTTP pour indiquer l'état de la réponse.<br>Ils sont regroupés en familles en fonction de leur signification générale. Voici les principales familles de codes de statut HTTP avec un exemple pour chacune d'entre elles :
+
+### Famille 1xx - Réponses informatives :
+> **100 - Continue**: Le serveur indique que la requête initiale a été reçue et que le client peut continuer à envoyer la requête. `HTTP/1.1 100 Continue`
+
+### Famille 2xx - Réponses de succès :
+> **200 - OK**: La requête a été traitée avec succès. `HTTP/1.1 200 OK`
+> **204 - No Content**: La requête a été traitée avec succès, mais il n'y a pas de contenu à renvoyer. `HTTP/1.1 204 No Content`
+
+### Famille 3xx - Redirection :
+> **301 - Moved Permanently**: La ressource a été déplacée de manière permanente vers une nouvelle URL. `HTTP/1.1 301 Moved Permanently`
+> **302 - Found (ou Moved Temporarily)**: La ressource a été temporairement déplacée vers une nouvelle URL. `HTTP/1.1 302 Found`
+
+### Famille 4xx - Erreurs du client :
+> **400 - Bad Request**: La requête du client est incorrecte ou mal formée. `HTTP/1.1 400 Bad Request`
+> **404 - Not Found**: La ressource demandée n'a pas été trouvée sur le serveur. `HTTP/1.1 404 Not Found`
+
+### Famille 5xx - Erreurs du serveur :
+> **500 - Internal Server Error**: Une erreur interne s'est produite sur le serveur. `HTTP/1.1 500 Internal Server Error`
+> **503 - Service Unavailable**: Le serveur n'est pas disponible pour le moment. `HTTP/1.1 503 Service Unavailable`
