@@ -6,12 +6,13 @@ img {
     width: 100%;
     height: auto;
 }
+
 #zone1 {
     margin-top: auto;
     margin-left: 30%;
     margin-right: 30%;
     position: relative;
-    background-color: #F13810;
+    background-color: #F5683B;
     border-radius: 10px;
     padding: 20px;
     margin-top: 50px;
