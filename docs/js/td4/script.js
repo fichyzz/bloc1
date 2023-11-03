@@ -1,4 +1,7 @@
-let valeur = 50;
-let message = 'Bonjour';
-let b = true
-alert(`Message: ${message} avec la valeur: ${valeur} et b: ${true}`);
+const keyPressFunction = function(e) {
+    document.querySelector('#saisie').innerHTML=event.target.value;
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#nom').addEventListener('keyup', keyPressFunction);
+});
