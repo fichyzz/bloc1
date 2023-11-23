@@ -1,5 +1,16 @@
 <?php
-if(empty)
+if(empty($_GET)) {
+    die("Erreur: ren dans le get");
+}
+extract($_GET);
+$message??='Message par défaut';
+$size??='12';
+
+if(isset($_GET['sizeVar'])) {
+    $up=($sizeVar=='+')?10:-10;
+    $size+=$up;
+}
+$color??='black';
 ?>
 
 <!DOCTYPE html>
@@ -24,16 +35,19 @@ if(empty)
 </ul>
 
     <form action="<?=$_SERVER['PHP_SELF']?>">
-        <imput type="number" name="size">
-        <imput type="color" name="color">
-        <textarea name="message"></textarea>
+        <imput type="number" name="size" value="<?=$size?>">
+        <imput type="submit" name="sizeVar" value="+">
+        <imput type="submit" name="sizeVar" value="-">
+        <imput type="color" name="color" value="<?=$color?>">
+        <textarea name="message"><?=$message?></textarea>
         <button type="submit">Valider</button>
     </form>
 
-    <div style="color: <?=$color?>;font-size: <?=$size?>px"><?=$message?></div>
+    <div style="..."><?=$message?></div>
 
 <footer>
     <p>Serveur :<strong><?=$_SERVEUR['SERVER_SIGNATURE']?></strong></p>
 </footer>
+
 </body>
 </html>
