@@ -1,4 +1,20 @@
 <?php
-function titre($content, $level=1) {
+function titre($content, $sousTitre='', $level=1) {
     echo "<h$level>$content</h$level>";
+    if($sousTitre!='') {
+        echo "<p class='sub-title'>$sousTitre</p>";
+    }
 }
+
+
+const IPSUM_ARRAY = [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam vitae nulla vitae convallis. Quisque tempor dui diam, vitae mollis felis aliquam a. Duis imperdiet, lorem eget finibus fringilla, nisi sapien mollis leo, id rutrum augue dolor et enim. Cras tellus nunc, pretium eu ipsum nec, tincidunt euismod neque. Phasellus efficitur et est eget malesuada. Morbi blandit diam lorem, ac dignissim nulla malesuada ac. Maecenas iaculis enim non dui tristique, in porta metus placerat. Mauris sit amet interdum lorem. Integer at suscipit nunc, sed faucibus sapien. Quisque nec nulla urna. Duis at porta sem, vitae auctor metus. In porta scelerisque luctus. In lacinia consequat dolor ut interdum. Maecenas ut metus pellentesque massa finibus congue. In volutpat erat non tempor fermentum.",
+
+"Quisque porttitor pretium risus non molestie. Mauris sit amet placerat nibh. Phasellus convallis rhoncus sem, id iaculis purus dignissim nec. Vestibulum congue lorem vitae eros eleifend, at congue sapien sagittis. Morbi in enim et est condimentum volutpat eget et nisi. Aenean leo elit, aliquet dignissim rhoncus ac, viverra ac ligula. Praesent pellentesque dolor nec tristique pulvinar. Nunc sed ante sapien. Nam cursus, risus nec ultricies accumsan, sapien diam elementum metus, facilisis finibus velit dolor eget quam. In nulla nibh, semper a justo nec, mollis euismod dui. Mauris finibus, metus vel luctus ornare, sapien lorem elementum neque, non maximus nunc magna eu nisi. Vivamus consectetur ligula a sapien rutrum, in semper leo accumsan. Quisque volutpat rutrum ligula sit amet tempus. Aenean at magna at massa tincidunt cursus.",
+
+"Ut vitae vehicula felis. Ut hendrerit lorem ac nisl auctor blandit. Phasellus lobortis gravida feugiat. Nulla a dictum erat. Vestibulum quis mauris ac dui laoreet blandit. In pharetra mattis facilisis. Curabitur tincidunt libero in orci tempus, eu ornare tortor euismod. Curabitur luctus porttitor magna vel viverra. Integer ullamcorper ultricies venenatis.",
+
+"Sed erat metus, convallis ac odio nec, ullamcorper semper turpis. Nulla ac justo finibus, fermentum eros eu, venenatis est. Fusce varius consectetur bibendum. Pellentesque interdum nisl sed lorem porttitor accumsan. Vestibulum id dolor vel nisl dignissim eleifend mattis vehicula tortor. Nam sed massa laoreet, eleifend odio ac, mattis quam. Vestibulum et mi magna. Praesent lacus nisl, eleifend id purus vitae, rhoncus pulvinar nunc. Nam ut odio placerat, euismod orci at, suscipit ex. Phasellus lacinia dui quis augue tristique tempus. In mi est, condimentum quis libero quis, accumsan lacinia nunc. Aliquam porttitor fermentum viverra. Sed porta ipsum eget ex aliquam, at suscipit justo ullamcorper. Fusce vitae tincidunt elit. Integer id nulla est. Etiam porttitor, erat sed efficitur lacinia, lacus tortor tristique augue, sed sollicitudin mauris ante in erat.",
+
+"Ut molestie, felis tempus iaculis interdum, lectus nibh faucibus risus, sed posuere dui arcu nec nibh. Aenean ac elit sit amet dui aliquet pharetra. Etiam a turpis at lectus accumsan fermentum. Phasellus ultrices ut mi ut viverra. Mauris cursus, mi sed ultrices iaculis, tortor ante congue ex, nec laoreet sem est ac diam. Aenean eu pellentesque felis. Fusce nunc ligula, accumsan ac lectus pharetra, egestas ullamcorper felis. Vestibulum scelerisque at purus vel ultricies. Etiam rhoncus lorem sed nulla tempor tristique. Morbi fermentum eros nec lobortis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras quis magna vehicula, vestibulum lorem ut, laoreet turpis. Nulla nec malesuada velit, eget posuere dolor. Quisque dapibus nisl lectus, non suscipit quam eleifend id."
+];
